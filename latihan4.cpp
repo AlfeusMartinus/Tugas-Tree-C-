@@ -164,11 +164,12 @@ int main (){
     int choose;
     do
     {
-        cout << "\t============================" << endl;
-        cout << "\t\tPROGRAM TREE" << endl;
-        cout << "\t============================\n\n" << endl;
+        cout << "\t\033[1m============================\033[0m" << endl;
+        cout << "\t\t\033[1mPROGRAM TREE\033[0m" << endl;
+        cout << "\t\033[1m============================\033[0m\n\n" << endl;
 
-        cout << "MENU" << endl;
+        cout << "\033[1m\tMENU\033[0m" << endl;
+        cout << "\033[1m======================\033[0m" << endl;
         cout << "[1] Input Data" << endl;
         cout << "[2] Penelusuran" << endl;
         cout << "[3] Cari Data" << endl;
