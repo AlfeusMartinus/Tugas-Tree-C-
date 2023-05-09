@@ -1,3 +1,8 @@
+// KELOMPOK 1
+// 1. Alfeus Martinus
+// 2. Jovanka Alexandro
+// 3. Muhammad Tsaqiif Ash-Shidiq
+// 4. Naufal Hadi Darmawan
 #include <iostream>
 using namespace std;
 
