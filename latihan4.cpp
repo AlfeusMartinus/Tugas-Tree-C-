@@ -228,7 +228,7 @@ int main (){
             break;
         case 6:
             system("CLS");
-            // yang ini belum
+            // yang ini belum dikerjakan
             system("PAUSE");
             system("CLS");
             break;
