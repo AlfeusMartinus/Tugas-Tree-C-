@@ -198,13 +198,13 @@ int main (){
             break;
         case 2:
             system("CLS");
-            cout << "Pre Order : ";
+            cout << "Pre Order \t: ";
             preOrder(pohon);
             cout << endl;
-            cout << "In Order : ";
+            cout << "In Order \t: ";
             inOrder(pohon);
             cout << endl;
-            cout << "Post Order : ";
+            cout << "Post Order \t: ";
             postOrder(pohon);
             cout << endl;
             system("PAUSE");
