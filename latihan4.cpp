@@ -160,6 +160,14 @@ void removeNode (binaryTree **root, int remove){
     }
 }
 
+int countNode(binaryTree *root)
+{
+    if (root != NULL)
+    {
+        return 1 + countNode(root->left) + countNode(root->right);
+    }
+}
+
 int main (){
     int choose;
     do
@@ -228,7 +236,7 @@ int main (){
             break;
         case 6:
             system("CLS");
-            // yang ini belum dikerjakan
+            cout << "Banyak Node pada Tree Sebanyak : " << countNode(pohon) << endl;
             system("PAUSE");
             system("CLS");
             break;
