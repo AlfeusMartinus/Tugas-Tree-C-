@@ -49,15 +49,23 @@ void printLeaf (tree *root){
     printLeaf(root->right);    
 }
 
-void printInternalNode (tree *root){
-    if (root == NULL || root->left == NULL && root->right == NULL)
-    {
+void printInternalNode(tree *root, bool isRoot) {
+    if (root == NULL) {
         return;
     }
-    cout << root->data << " ";
-    printInternalNode(root->left);
-    printInternalNode(root->right);
+
+    if (isRoot && root->left == NULL && root->right == NULL) {
+        return;
+    }
+
+    if (!isRoot && (root->left != NULL || root->right != NULL)) {
+        cout << root->data << " ";
+    }
+
+    printInternalNode(root->left, false);
+    printInternalNode(root->right, false);
 }
+
 
 void printSibling (tree *root){
     if (root == NULL)
@@ -87,6 +95,6 @@ int main (){
 
     cout << "Root : "<< pohon->data << endl;
     cout << "Leaf : "; printLeaf(pohon); cout << endl;
-    cout << "Internal Node : "; printInternalNode(pohon); cout << endl;
+    cout << "Internal Node : "; printInternalNode(pohon, true); cout << endl;
     cout << "Sibling : "; printSibling(pohon); cout << endl;
 }
